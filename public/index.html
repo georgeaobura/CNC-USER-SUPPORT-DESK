@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2E6DE7"><meta name="description" content="User Support Tool - ICT service and support centre">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/assets/acms-heading-reference.png">
+<link rel="stylesheet" href="/styles.css"><title>User Support Tool</title>
+</head>
+<body>
+<header class="topbar">
+ <div class="brand"><img src="/assets/organisation-logo.jpg" alt="Organisation logo"><div><div class="brand-title">USER SUPPORT TOOL</div><small>ICT SERVICE & SUPPORT CENTRE</small></div></div>
+ <nav><button class="nav-btn active" data-view="request">Submit a request</button><button class="nav-btn" data-view="track">Track ticket</button><button class="nav-btn" data-view="admin">Staff portal</button></nav>
+</header>
+<main>
+<section id="request" class="view active">
+ <div class="hero"><div><span class="eyebrow">WE'RE HERE TO HELP</span><h1>How can we support you?</h1><p>Submit your ICT support request. Please provide accurate details so our team can assist you.</p></div><div class="hero-mark">UST<span>+</span></div></div>
+ <form id="ticketForm" class="panel form-grid">
+  <label>Full name <b>*</b><input name="full_name" required maxlength="120" placeholder="Enter your full name"></label>
+  <label>Phone number <b>*</b><input name="phone" required maxlength="40" placeholder="e.g. 07XX XXX XXX"></label>
+  <label>Email address <small>(optional)</small><input name="email" type="email" maxlength="160" placeholder="name@example.com"></label>
+  <label>System requiring support <b>*</b><select name="system" id="system" required><option value="">Select system</option><option>ACMS</option><option>E-SADAKA</option><option>CNC DIGITAL ASSISTANT</option></select></label>
+  <label>District <b>*</b><select name="district_id" id="district" required><option value="">Select district first</option></select></label>
+  <label>Church <b>*</b><select name="church_id" id="church" required disabled><option value="">Select a district first</option></select></label>
+  <label class="full">Type of support needed <b>*</b><select name="support_type" id="supportType" required><option value="">Select support category</option></select></label>
+  <label class="full" id="descriptionWrap">Describe the issue <span id="descriptionHint">(Add useful details, but never include your password or PIN.)</span><textarea name="description" id="description" rows="4" maxlength="2000" placeholder="Tell us what happened, when it started and any error message shown."></textarea></label>
+  <div class="full privacy-note">For your safety, never write your password, PIN or one-time verification code in a support request.</div>
+  <div class="full form-actions"><button class="primary" type="submit">Submit support request <span>→</span></button><span id="formMessage" role="status"></span></div>
+ </form>
+</section>
+<section id="success" class="view">
+ <div class="panel success-panel"><div class="success-icon">✓</div><span class="eyebrow">REQUEST RECEIVED</span><h1>Your ticket has been created</h1><p>Keep this reference number. You can use it to check the progress of your request.</p><div id="newTicket" class="ticket-ref"></div><button class="primary" id="copyTicket">Copy ticket number</button><button class="quiet" data-go="track">Track this ticket</button></div>
+</section>
+<section id="track" class="view">
+ <div class="section-head"><span class="eyebrow">REQUEST STATUS</span><h1>Track your support ticket</h1><p>Enter your ticket reference and the phone number used when submitting the request.</p></div>
+ <form id="trackForm" class="panel track-form"><label>Ticket number<input name="ticket_no" required placeholder="e.g. ACMS-2026-00001"></label><label>Phone number<input name="phone" required placeholder="Phone number used on request"></label><button class="primary">Find my ticket</button></form><div id="trackResult"></div>
+</section>
+<section id="admin" class="view">
+ <div id="loginPanel" class="panel login-panel"><span class="eyebrow">AUTHORISED PERSONNEL</span><h1>Staff sign in</h1><p>Access is restricted to authorised ICT personnel.</p><form id="loginForm"><label>Username<input name="username" required autocomplete="username"></label><label>Password<input name="password" type="password" required autocomplete="current-password"></label><button class="primary">Sign in securely</button><div id="loginMessage" class="message"></div></form></div>
+ <div id="dashboard" hidden>
+  <div class="dash-head"><div><span class="eyebrow">ICT OPERATIONS</span><h1>Support dashboard</h1><p>Review, prioritise, assign and report on service requests.</p></div><button class="quiet" id="logout">Sign out</button></div>
+  <div class="stats" id="stats"></div>
+  <div class="toolbar"><input id="searchTickets" placeholder="Search ticket, requester, phone or church"><select id="filterSystem"><option value="">All systems</option><option>ACMS</option><option>E-SADAKA</option><option>CNC DIGITAL ASSISTANT</option></select><select id="filterStatus"><option value="">All statuses</option><option>Pending</option><option>In Progress</option><option>Awaiting Requester</option><option>Resolved</option><option>Closed</option></select><button class="primary small" id="refreshTickets">Refresh</button><button class="quiet small" id="exportCsv">Export CSV</button><button class="quiet small" onclick="window.print()">Print view</button></div>
+  <div class="table-wrap panel"><table><thead><tr><th>Ticket</th><th>Requester / Location</th><th>System & issue</th><th>Priority</th><th>Status</th><th>Submitted</th><th></th></tr></thead><tbody id="ticketRows"></tbody></table></div>
+  <div class="admin-tools">
+   <div class="panel"><div class="panel-title"><h2>District management</h2><span class="muted">Add, rename or deactivate</span></div><form id="districtForm" class="inline-form"><input name="name" placeholder="New district name" required><button class="primary small">Add district</button></form><div id="districtRows" class="manage-list"></div></div>
+   <div class="panel"><div class="panel-title"><h2>Church management</h2><span class="muted">Add or maintain church records</span></div><form id="churchForm" class="inline-form"><select name="district_id" id="churchDistrict" required></select><input name="name" placeholder="Church name" required><button class="primary small">Add</button></form><div id="churchRows" class="manage-list"></div></div>
+  </div>
+ </div>
+</section>
+</main>
+<div id="modal" class="modal" hidden><div class="modal-card"><button class="modal-close" id="closeModal">×</button><div id="modalBody"></div></div></div>
+<footer><span>USER SUPPORT TOOL</span><span>Think clearly. Request support. Stay secure.</span></footer>
+<script src="/app.js"></script><script>if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});</script>
+</body></html>

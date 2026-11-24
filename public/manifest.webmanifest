@@ -1,0 +1,12 @@
+{
+ "name":"User Support Tool",
+ "short_name":"User Support",
+ "description":"ICT Service and Support Centre",
+ "start_url":"/",
+ "display":"standalone",
+ "background_color":"#f3f6fb",
+ "theme_color":"#2E6DE7",
+ "icons":[
+  {"src":"/assets/acms-heading-reference.png","sizes":"any","type":"image/png","purpose":"any"}
+ ]
+}
