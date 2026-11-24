@@ -1,0 +1,566 @@
+[
+  {
+    "name": "Apondo",
+    "churches": [
+      "Anyuro",
+      "Apondo",
+      "Kaluore",
+      "Kogwedhi",
+      "Kuoyo",
+      "Mariwa-Apondo",
+      "New Life Kasuna",
+      "Nyahera-kano",
+      "Obugi Harambee",
+      "Obugi Wath",
+      "Odongo Her",
+      "Ogenya-Apondo",
+      "Ojere"
+    ]
+  },
+  {
+    "name": "Awasi",
+    "churches": [
+      "Angoro",
+      "Awasi Central",
+      "Awasi Dala",
+      "Awasi Got",
+      "Awasi Hillview",
+      "Ebenezer",
+      "Great Hope Kanyipola",
+      "Habari Jema",
+      "Kamita",
+      "Migere",
+      "Ngere Kagoro Central",
+      "Ngere Main",
+      "Ngiti",
+      "Nyakongo",
+      "Ogwedhi Central",
+      "Ojienda",
+      "Osiri Awasi",
+      "Othoo",
+      "Pala Border Central",
+      "Sae",
+      "Simbi Kolang'",
+      "Wambi Musda"
+    ]
+  },
+  {
+    "name": "Better Living",
+    "churches": [
+      "Better Living",
+      "City Of Hope"
+    ]
+  },
+  {
+    "name": "Cherwa",
+    "churches": [
+      "Amazing- Cherwa",
+      "Charare",
+      "Cherwa",
+      "Guu",
+      "Newlife- Cherwa",
+      "Obingo",
+      "Odeyo",
+      "Olasi Central"
+    ]
+  },
+  {
+    "name": "East Kano",
+    "churches": [
+      "Ahero Central",
+      "Ahero Junction",
+      "Alara Amazing",
+      "Boya Central",
+      "Boya East",
+      "Haven of Peace",
+      "Highway",
+      "Kochieng",
+      "Korowe",
+      "Magina",
+      "Mbega",
+      "Mbenga",
+      "Ongeche Jerusalem",
+      "Oriwo Kanam",
+      "Withur"
+    ]
+  },
+  {
+    "name": "Greater East",
+    "churches": [
+      "Gesoko",
+      "Morning Star",
+      "Siany",
+      "White Memorial"
+    ]
+  },
+  {
+    "name": "Katito",
+    "churches": [
+      "Awach",
+      "Ayueyo Central",
+      "Bethlehem Kodete",
+      "Katito Central",
+      "Katito West",
+      "Kuth Awendo",
+      "Ogango",
+      "Siany-Ogango",
+      "Waradho"
+    ]
+  },
+  {
+    "name": "Kenya Re",
+    "churches": [
+      "Kenya Re"
+    ]
+  },
+  {
+    "name": "Kibos",
+    "churches": [
+      "Bethany Kajulu",
+      "Goodnews",
+      "Heralders",
+      "Kibos",
+      "Kibos East",
+      "Kibos Prison",
+      "Nairobi Ndogo"
+    ]
+  },
+  {
+    "name": "Kisumu Central",
+    "churches": [
+      "Baraka",
+      "Kamakowa",
+      "Kisumu Central",
+      "Kisumu Laos",
+      "Polyview"
+    ]
+  },
+  {
+    "name": "Kisumu East",
+    "churches": [
+      "Kisumu East",
+      "Village of Hope"
+    ]
+  },
+  {
+    "name": "Kisumu North",
+    "churches": [
+      "Angira Haven",
+      "Gita",
+      "Got Nyabondo",
+      "Jerusalem Central",
+      "Kotunga",
+      "Mamboleo Harvest",
+      "Obwolo",
+      "Riverside",
+      "Sugar Research"
+    ]
+  },
+  {
+    "name": "Kisumu South",
+    "churches": [
+      "Amazing Grace Kisumu",
+      "Bethel-Kisumu",
+      "Dunga",
+      "Dunga Island",
+      "Kachok",
+      "Kisumu South",
+      "New Life Kisumu"
+    ]
+  },
+  {
+    "name": "Kisumu West",
+    "churches": [
+      "Advent Hill",
+      "Airport",
+      "Airport South",
+      "Kisian",
+      "Kisumu Command",
+      "Kodiaga",
+      "Kodiaga Prison",
+      "Nawa",
+      "Ngege-kisumu West",
+      "Ojola Central",
+      "Riat",
+      "Riat East",
+      "Rota-Kisumu",
+      "Tiengre"
+    ]
+  },
+  {
+    "name": "Koru",
+    "churches": [
+      "Bethlehem Koru",
+      "Fortenan",
+      "Kandege",
+      "Karos",
+      "Koguta",
+      "Koru",
+      "Menara",
+      "Muhoroni Central",
+      "Muhoroni East",
+      "Nyando",
+      "Oduwo",
+      "Ogwedhi -Koru",
+      "Sauset"
+    ]
+  },
+  {
+    "name": "Migosi",
+    "churches": [
+      "Amazing Discovaries",
+      "Bukna",
+      "Hillview",
+      "Kiboswa Central",
+      "Migosi",
+      "Voice Of Hope-kisumu"
+    ]
+  },
+  {
+    "name": "Muhoroni",
+    "churches": [
+      "Abuoro",
+      "Achego",
+      "Amani",
+      "Chemelil",
+      "Great Hope Oneno Nam",
+      "Makindu",
+      "Mariwa-Muhoroni",
+      "Mikiria",
+      "Muhoroni- Kalai",
+      "Nyakungru",
+      "Ogen",
+      "oseng",
+      "Oseng Teti",
+      "Songhor",
+      "Tamu",
+      "Tonde"
+    ]
+  },
+  {
+    "name": "North East Kano",
+    "churches": [
+      "Amilo",
+      "Apidi",
+      "Gabi Bethel",
+      "Kibigori",
+      "Kibigori Central",
+      "Marega",
+      "Masogo-North East Kano",
+      "Migingo-north East Kano",
+      "Milimani",
+      "Miranga",
+      "Miwani",
+      "New Life Irrigation",
+      "Omanyo",
+      "Ombeyi Central",
+      "Ramula N. East Kano",
+      "Rangombe Central",
+      "Rangombe Dala",
+      "Rutek",
+      "Sanda Kano",
+      "Sang'ayo",
+      "Yawo"
+    ]
+  },
+  {
+    "name": "Nyabondo East",
+    "churches": [
+      "Bodi-Nyabondo",
+      "Kabete",
+      "Keyo",
+      "Ndori Uplands",
+      "Nyamaroka",
+      "Oboch Central",
+      "Oboch Main",
+      "Radienya",
+      "Riat Kajimbo",
+      "Sigoti"
+    ]
+  },
+  {
+    "name": "Nyabondo West",
+    "churches": [
+      "Achingure",
+      "Anding`o",
+      "Anuro",
+      "Apoko",
+      "Bethel",
+      "Gari",
+      "Lwala",
+      "Masogo-Obuora",
+      "Ng'ope",
+      "Nyamarimba",
+      "Nyawita",
+      "Ogambla",
+      "Olwalo",
+      "Ombugo",
+      "Ondoga",
+      "Othith",
+      "Sunrise",
+      "Table Land"
+    ]
+  },
+  {
+    "name": "Nyahera",
+    "churches": [
+      "Bar Mariwa",
+      "Dago Thim",
+      "Heroes of Faith",
+      "Maliera Kapuonja",
+      "Nyahera-nyahera",
+      "Orinde Central",
+      "Orinde Main",
+      "Sinyolo",
+      "View Point"
+    ]
+  },
+  {
+    "name": "Nyakwere",
+    "churches": [
+      "Bonde Nyakwere",
+      "Buru",
+      "Lakeview",
+      "Nyadina",
+      "Nyakwere",
+      "Nyawalo",
+      "Rota Central",
+      "Sango",
+      "Sangoro"
+    ]
+  },
+  {
+    "name": "Nyamarumbe",
+    "churches": [
+      "Asawo",
+      "Kanyalwal",
+      "Kasawo",
+      "Lisana",
+      "Miruka",
+      "Nduga",
+      "Nyamarumbe",
+      "Ochuoga",
+      "Oremo",
+      "Rae",
+      "Urudi"
+    ]
+  },
+  {
+    "name": "Nyamasaria",
+    "churches": [
+      "Bethlehem",
+      "Buoye",
+      "Charity",
+      "Nyamasaria",
+      "Nyamasaria East",
+      "Nyamasaria South",
+      "Orongo",
+      "Orongo Central",
+      "Tumaini"
+    ]
+  },
+  {
+    "name": "Odeso",
+    "churches": [
+      "Angola",
+      "Chiga",
+      "Chiga North",
+      "Cornerstone - Odeso",
+      "Kadiju",
+      "Kasese",
+      "Kunya Japan",
+      "New Hope",
+      "Nyalunya",
+      "Odeso",
+      "Ragumo"
+    ]
+  },
+  {
+    "name": "Olembo",
+    "churches": [
+      "Alara-Olembo",
+      "Ebenezer Kamondo",
+      "Got Kanyarera",
+      "Jimo Olwalo",
+      "Kosogo",
+      "Manyatta",
+      "Manyatta East",
+      "Nyalunya Goodnews",
+      "Olembo",
+      "Olembo Hill View",
+      "Ombienya",
+      "Pap-central",
+      "Paplesni"
+    ]
+  },
+  {
+    "name": "Rabuor",
+    "churches": [
+      "Alendu Bethel",
+      "Great Hope Rabuor",
+      "Kabonyo",
+      "Mao",
+      "Masogo Rabuor",
+      "Migingo",
+      "Nduru",
+      "Nyakakana",
+      "Nyamware",
+      "Nyangande",
+      "Odega Gloryland",
+      "Rabuor East",
+      "Rabuor-rabuor",
+      "Ranjira",
+      "Rweya",
+      "Scheme",
+      "Ugwe"
+    ]
+  },
+  {
+    "name": "Ragen",
+    "churches": [
+      "Family Life Obanda",
+      "Gulyago",
+      "Harambee Central",
+      "Kanan Obaje",
+      "Kolweny Central",
+      "Kong'ou Central",
+      "Konyuro Central",
+      "Kusa",
+      "Nyaksure",
+      "Obanda",
+      "Ogilo Kameja",
+      "Okanowach",
+      "Onwang'o",
+      "Onyinge",
+      "Oriang Ragen",
+      "Ragen",
+      "Thur Dibuoro",
+      "Tumaini - Ragen"
+    ]
+  },
+  {
+    "name": "Seme Orii",
+    "churches": [
+      "Anjero",
+      "Bethel Agape",
+      "Blessed Hope Bar Andingo",
+      "Daraja Mbili",
+      "Gloryland Huma",
+      "Got Odongo",
+      "Holo Central-orii",
+      "Kadero",
+      "Korienje Blessed Hope",
+      "Kuoyo Kowe",
+      "Lela",
+      "Lung'a",
+      "Lwala Kadawa",
+      "Magwar",
+      "Maseno Central",
+      "Maseno East",
+      "Mbeka",
+      "Nyadhii",
+      "Orando",
+      "Perihab",
+      "Ratta Kago",
+      "Seme Orii",
+      "Shalom",
+      "Youth Olute"
+    ]
+  },
+  {
+    "name": "Sondu",
+    "churches": [
+      "Anding'o Mesa",
+      "Canaan Valley",
+      "Dirubi",
+      "Holo",
+      "Neema",
+      "Ngege-Sondu",
+      "Nyabondo Central",
+      "Obuya",
+      "Ongielore",
+      "Rabolo",
+      "Soi",
+      "Sondu Amazing",
+      "Sondu Central",
+      "Sondu Ebenezer"
+    ]
+  },
+  {
+    "name": "South Seme",
+    "churches": [
+      "Abol",
+      "Akado Central",
+      "Alwala",
+      "Amazing Grace South Seme",
+      "Angoga",
+      "Bodi Central-Seme",
+      "Corner Stone Rodi",
+      "Glorious",
+      "Goshen Wangarot",
+      "Hall Kabonyo",
+      "Kit Mikayi",
+      "Kolenyo-Central",
+      "Kolenyo-Milugo",
+      "Kombewa Central",
+      "Konam",
+      "Lolwe",
+      "Orumba",
+      "Reru Central",
+      "Reru Main",
+      "Upper Hill"
+    ]
+  },
+  {
+    "name": "South West Kisumu",
+    "churches": [
+      "Alwangni",
+      "Kaloka",
+      "Kowiyo",
+      "Namba Kapiyo",
+      "Nyawara-South West",
+      "Obambo Kisumu",
+      "Oriang South West",
+      "Osiri South West",
+      "Usare"
+    ]
+  },
+  {
+    "name": "Thurgem",
+    "churches": [
+      "Atoyieng`o",
+      "Bwanda",
+      "Canaan Thurgem",
+      "Holo Orucho",
+      "Jerusalem Thurgem",
+      "Katito Township",
+      "Kodum",
+      "Magunga",
+      "Ndori",
+      "Ngomo",
+      "Nyarombe",
+      "Nyaudo",
+      "Omuga",
+      "Onyuongo",
+      "Pawtenge",
+      "Ponge",
+      "Rarieda",
+      "Thim",
+      "Thurgem",
+      "Wangneno"
+    ]
+  },
+  {
+    "name": "University",
+    "churches": [
+      "Musda"
+    ]
+  },
+  {
+    "name": "Victory",
+    "churches": [
+      "Hill Top",
+      "Victory Sda"
+    ]
+  }
+]

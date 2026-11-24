@@ -1,0 +1,17 @@
+{
+  "name": "user-support-tool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web and Android-installable ICT support ticketing application",
+  "scripts": { "start": "node server.js", "dev": "node server.js", "create-admin": "node scripts/create-admin.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
