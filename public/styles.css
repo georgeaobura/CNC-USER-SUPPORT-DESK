@@ -90,3 +90,49 @@
  .hero-floats img:nth-child(6){--burst-x:115px;--burst-y:60px}
 }
 @media(prefers-reduced-motion:reduce){.hero-floats img{animation:none!important;opacity:.12!important}}
+
+
+/* Lively left-to-right logo stream: continuous, staggered curved trajectories */
+.hero-with-floats{isolation:isolate;position:relative;overflow:hidden}
+.hero-floats{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.hero-floats img{
+  position:absolute!important;left:-12%!important;top:var(--start-y)!important;
+  right:auto!important;bottom:auto!important;
+  width:clamp(38px,4.2vw,58px)!important;height:clamp(38px,4.2vw,58px)!important;
+  max-width:58px!important;max-height:58px!important;
+  object-fit:contain!important;border:0!important;border-radius:0!important;
+  background:transparent!important;
+  /* White JPG canvas blends into the banner instead of appearing as a tile. */
+  mix-blend-mode:multiply!important;
+  opacity:0!important;filter:saturate(1.08) contrast(1.04);
+  animation:ust-logo-flight var(--flight-time,11s) cubic-bezier(.42,0,.25,1) infinite!important;
+  animation-delay:var(--flight-delay,0s)!important;
+  will-change:transform,opacity;
+}
+.hero-floats img:nth-child(1){--start-y:5%;--flight-time:10.5s;--flight-delay:-1.1s;--lift:-28px;--sway:44px;--end-y:58%}
+.hero-floats img:nth-child(2){--start-y:65%;--flight-time:12s;--flight-delay:-7s;--lift:24px;--sway:-38px;--end-y:16%}
+.hero-floats img:nth-child(3){--start-y:28%;--flight-time:11.3s;--flight-delay:-4.3s;--lift:-45px;--sway:32px;--end-y:72%}
+.hero-floats img:nth-child(4){--start-y:82%;--flight-time:12.7s;--flight-delay:-9.4s;--lift:-20px;--sway:50px;--end-y:34%}
+.hero-floats img:nth-child(5){--start-y:45%;--flight-time:10.9s;--flight-delay:-2.8s;--lift:34px;--sway:-46px;--end-y:8%}
+.hero-floats img:nth-child(6){--start-y:12%;--flight-time:13s;--flight-delay:-6.2s;--lift:46px;--sway:28px;--end-y:86%}
+@keyframes ust-logo-flight{
+  0%{opacity:0;transform:translate3d(-8vw,0,0) rotate(-18deg) scale(.48)}
+  7%{opacity:.3;transform:translate3d(12vw,var(--lift),0) rotate(12deg) scale(.78)}
+  20%{opacity:.42;transform:translate3d(32vw,calc(var(--lift) * -1),0) rotate(72deg) scale(1.04)}
+  36%{opacity:.28;transform:translate3d(52vw,var(--sway),0) rotate(145deg) scale(.86)}
+  52%{opacity:.4;transform:translate3d(72vw,calc(var(--sway) * -1),0) rotate(225deg) scale(1.08)}
+  70%{opacity:.24;transform:translate3d(94vw,var(--lift),0) rotate(300deg) scale(.9)}
+  88%{opacity:.16;transform:translate3d(116vw,calc(var(--lift) * -1),0) rotate(365deg) scale(.68)}
+  100%{opacity:0;transform:translate3d(132vw,0,0) rotate(420deg) scale(.42)}
+}
+.hero-with-floats .hero-copy,.hero-with-floats .hero-mark{position:relative;z-index:1}
+@media(max-width:760px){
+ .hero-floats img{width:32px!important;height:32px!important}
+ .hero-floats img:nth-child(1){--start-y:3%}
+ .hero-floats img:nth-child(2){--start-y:70%}
+ .hero-floats img:nth-child(3){--start-y:34%}
+ .hero-floats img:nth-child(4){--start-y:88%}
+ .hero-floats img:nth-child(5){--start-y:51%}
+ .hero-floats img:nth-child(6){--start-y:16%}
+}
+@media(prefers-reduced-motion:reduce){.hero-floats img{animation:none!important;display:none!important}}
