@@ -48,3 +48,45 @@
 @keyframes ust-float-f{from{transform:translate(0,0) rotate(4deg)}to{transform:translate(-25px,-18px) rotate(-6deg)}}
 @media(max-width:760px){.hero-floats img{width:42px!important;height:42px!important;opacity:.11!important}.hero-floats img:nth-child(2),.hero-floats img:nth-child(4){display:none!important}}
 @media(prefers-reduced-motion:reduce){.hero-floats img{animation:none!important}}
+
+
+/* Coordinated central boil-and-burst logo animation */
+.hero-floats{isolation:isolate}
+.hero-floats img{
+  left:50%!important;top:50%!important;right:auto!important;bottom:auto!important;
+  width:clamp(40px,4.6vw,62px)!important;height:clamp(40px,4.6vw,62px)!important;
+  max-width:62px!important;max-height:62px!important;
+  object-fit:contain!important;border:0!important;border-radius:0!important;
+  background:transparent!important;opacity:.78!important;
+  mix-blend-mode:multiply!important;filter:none!important;
+  transform:translate(-50%,-50%);
+  animation:ust-boil-burst 5.2s cubic-bezier(.2,.7,.25,1) infinite!important;
+  will-change:transform,opacity;
+}
+.hero-floats img:nth-child(1){--burst-x:-230px;--burst-y:-110px;--spin:-24deg;animation-delay:0s!important}
+.hero-floats img:nth-child(2){--burst-x:-115px;--burst-y:165px;--spin:18deg;animation-delay:0s!important}
+.hero-floats img:nth-child(3){--burst-x:0px;--burst-y:-205px;--spin:-12deg;animation-delay:0s!important}
+.hero-floats img:nth-child(4){--burst-x:130px;--burst-y:155px;--spin:28deg;animation-delay:0s!important}
+.hero-floats img:nth-child(5){--burst-x:235px;--burst-y:-75px;--spin:-18deg;animation-delay:0s!important}
+.hero-floats img:nth-child(6){--burst-x:205px;--burst-y:105px;--spin:22deg;animation-delay:0s!important}
+@keyframes ust-boil-burst{
+  0%,5%{transform:translate(-50%,-50%) scale(.72) rotate(0);opacity:.05}
+  7%{transform:translate(calc(-50% - 3px),calc(-50% + 2px)) scale(.78) rotate(-5deg);opacity:.6}
+  9%{transform:translate(calc(-50% + 3px),calc(-50% - 2px)) scale(.82) rotate(5deg);opacity:.85}
+  11%{transform:translate(calc(-50% - 2px),calc(-50% - 3px)) scale(.8) rotate(-4deg);opacity:.9}
+  13%{transform:translate(calc(-50% + 2px),calc(-50% + 3px)) scale(.84) rotate(4deg);opacity:.9}
+  16%{transform:translate(-50%,-50%) scale(.78) rotate(0);opacity:.85}
+  42%{transform:translate(calc(-50% + var(--burst-x)),calc(-50% + var(--burst-y))) scale(1.08) rotate(var(--spin));opacity:.82}
+  58%,72%{transform:translate(calc(-50% + var(--burst-x)),calc(-50% + var(--burst-y))) scale(1) rotate(var(--spin));opacity:.72}
+  100%{transform:translate(-50%,-50%) scale(.72) rotate(0);opacity:.05}
+}
+@media(max-width:760px){
+ .hero-floats img{width:34px!important;height:34px!important}
+ .hero-floats img:nth-child(1){--burst-x:-125px;--burst-y:-65px}
+ .hero-floats img:nth-child(2){--burst-x:-70px;--burst-y:95px}
+ .hero-floats img:nth-child(3){--burst-x:0px;--burst-y:-120px}
+ .hero-floats img:nth-child(4){--burst-x:75px;--burst-y:95px}
+ .hero-floats img:nth-child(5){--burst-x:125px;--burst-y:-55px}
+ .hero-floats img:nth-child(6){--burst-x:115px;--burst-y:60px}
+}
+@media(prefers-reduced-motion:reduce){.hero-floats img{animation:none!important;opacity:.12!important}}
